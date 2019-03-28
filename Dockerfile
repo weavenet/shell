@@ -12,4 +12,6 @@ RUN apt-get install -y traceroute
 RUN apt-get install -y vim
 
 RUN rm -f /root/.bashrc
+
+RUN date > ~/.timestamp
 RUN curl -s https://raw.githubusercontent.com/weavenet/dotfiles/master/install.sh | bash

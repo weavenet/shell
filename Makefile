@@ -1,4 +1,4 @@
-all: test
+all: shell
 
 docker-build:
 	@echo Building shell image
