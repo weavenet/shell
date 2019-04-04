@@ -5,6 +5,7 @@ RUN apt-get install -y bats
 RUN apt-get install -y curl
 RUN apt-get install -y dnsutils
 RUN apt-get install -y git
+RUN apt-get install -y make
 RUN apt-get install -y nmap
 RUN apt-get install -y sudo
 RUN apt-get install -y telnet
