@@ -15,6 +15,7 @@ RUN apt-get install -y man
 RUN apt-get install -y mutt
 RUN apt-get install -y nmap
 RUN apt-get install -y openssh-server
+RUN apt-get install -y ruby
 RUN apt-get install -y sudo
 RUN apt-get install -y telnet
 RUN apt-get install -y traceroute
