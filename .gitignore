@@ -1,1 +1,2 @@
 **/*.rendered
+**/authorized_keys
