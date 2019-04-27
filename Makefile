@@ -13,7 +13,7 @@ files: ~/.ssh/id_rsa.pub
 	cp ~/.ssh/id_rsa.pub files/authorized_keys
 
 local:
-	ssh ubuntu@localhost
+	ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no ubuntu@localhost
 
 publish:
 	bash scripts/publish.sh
