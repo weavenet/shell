@@ -4,16 +4,16 @@ FROM amazonlinux
 ENV USER ec2-user
 
 # Common Packages
-RUN yum install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev make
+RUN yum install -y autoconf binutils bison make
 
 # Network Utils
 RUN yum install -y curl dnsutils iperf mtr netcat nmap openssh-server procps telnet traceroute whois wget
 
 # Misc Packages
-RUN yum install -y jq lnav lsb-core mutt sudo silversearcher-ag tree unzip vim
+RUN yum install -y jq mutt sudo tree unzip vim
 
 # Install Dev Packages
-RUN yum install -y bats openjdk-8-jre-headless clojure git golang nodejs npm python3 python3-distutils python3-pip ruby tar
+RUN yum install -y git golang python3 python3-pip ruby tar
 
 # Add ssh run
 ADD files/run_shell.sh /run_shell.sh
