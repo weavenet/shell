@@ -15,7 +15,8 @@ authorized_keys: ~/.ssh/id_rsa.pub
 	cp ~/.ssh/id_rsa.pub files/authorized_keys
 
 clean: stop
-	bash scripts/clean.sh ${SHELL_FLAVOR}
+	bash scripts/clean.sh amazon
+	bash scripts/clean.sh ubuntu
 
 local:
 	ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no user@localhost

@@ -10,4 +10,4 @@ for i in `docker ps -a |grep run_shell.sh |awk '{print $1}'`; do
 done
 
 echo "Removing image '$image'"
-docker rmi $image
+docker rmi --force $image
