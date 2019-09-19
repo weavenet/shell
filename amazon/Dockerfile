@@ -1,7 +1,7 @@
 FROM amazonlinux
 
 # Non priveleged user
-ENV USER ec2-user
+ENV USER user
 
 # Common Packages
 RUN yum install -y autoconf binutils bison make

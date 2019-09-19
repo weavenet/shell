@@ -12,5 +12,8 @@ fi
 
 echo "Stopping container '$container_id'."
 docker stop ${container_id}
-
 echo "Stopping container completed."
+
+echo "Removing container '$container_id'."
+docker rm ${container_id}
+echo "Removing container completed."

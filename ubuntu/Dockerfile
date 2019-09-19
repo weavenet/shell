@@ -1,7 +1,7 @@
 FROM ubuntu
 
 # Non priveleged user
-ENV USER ubuntu
+ENV USER user
 
 # Update Apt get
 RUN apt-get update --fix-missing
