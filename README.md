@@ -22,10 +22,16 @@ Connect to the local container
 make local
 ```
 
-# Change OS
+# Options
 
 To build ubuntu, prior to running the above
 
 ```
 export SHELL_OS=ubuntu
+```
+
+To mount ~/code
+
+```
+export SHELL_MOUNT_CODE=true
 ```

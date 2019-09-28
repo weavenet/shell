@@ -1,11 +1,19 @@
 #!/bin/bash
 
-set -eu
+set -e
 
 image=$1
 
 echo "Starting container."
 
-docker run -d -p 22:22 -v ~/code:/home/user/code $image
+if [ $SHELL_MOUNT_CODE ]; then
+    SHELL_MOUNT_CODE_CMD="-v $HOME/code:/home/user/code"
+fi
 
-echo "Container succesfully started."
+cmd="docker run -d -p 22:22 $SHELL_MOUNT_CODE_CMD $image"
+
+echo "Starting command with '$cmd'."
+
+container_id=`$cmd`
+
+echo "Container '$container_id' succesfully started."

@@ -7,7 +7,7 @@ ENV USER user
 RUN yum install -y autoconf binutils bison make
 
 # Network Utils
-RUN yum install -y curl dnsutils iperf mtr netcat nmap openssh-server procps telnet traceroute whois wget
+RUN yum install -y curl dnsutils iperf mtr netcat net-tools nmap openssh-server procps telnet traceroute whois wget
 
 # Misc Packages
 RUN yum install -y jq mutt sudo tree unzip vim
