@@ -13,7 +13,7 @@ RUN yum install -y curl dnsutils iperf mtr netcat net-tools nmap openssh-server 
 RUN yum install -y jq mutt sudo tree unzip vim
 
 # Install Dev Packages
-RUN yum install -y git golang python3 python3-pip ruby tar
+RUN yum install -y git golang openssl openssl-dev python3 python3-pip ruby tar
 
 # Add ssh run
 ADD files/run_shell.sh /run_shell.sh
