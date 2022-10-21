@@ -10,7 +10,7 @@ if [ $SHELL_MOUNT_CODE ]; then
     SHELL_MOUNT_CODE_CMD="-v $HOME/code:/home/user/code"
 fi
 
-cmd="docker run -d -p 22:22 $SHELL_MOUNT_CODE_CMD $image"
+cmd="docker run -d -p 2222:22 $SHELL_MOUNT_CODE_CMD $image"
 
 echo "Starting command with '$cmd'."
 
