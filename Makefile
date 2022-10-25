@@ -10,7 +10,7 @@ commands:
 
 image: authorized_keys
 	@echo "Building '${SHELL_OS}' shell image."
-	docker build -f ${SHELL_OS}/Dockerfile --tag=${SHELL_OS}amazon . > ${TMPDIR}/shell.out 2>&1
+	docker build -f ${SHELL_OS}/Dockerfile --tag=${SHELL_OS} . > ${TMPDIR}/shell.out 2>&1
 
 authorized_keys: ~/.ssh/id_rsa.pub
 	@echo "Copying '~/.ssh/id_rsa.pub' to 'files/authorized_keys'."
